@@ -61,11 +61,9 @@ function SearchInput({ searchType }) {
     console.log(searchLog);
   }, [searchLog]);
 
-  // 규민 : 리액트 쿼리를 써서 캐싱을 하는게 좋지 않을까.. 캐싱 안하면 검색이 바뀔때마다 다시 렌더링 된다. 데이터를 한 번만 불러와서 렌더링하지 않고 사용자가 필요할 때마다 꺼내 쓸 수 있다. useRef 를 사용해
-
   return (
     <>
-      <div className="flex mt-10 relative">
+      <div className="flex mt-6 relative">
         <input
           type="text"
           role="searchbox"

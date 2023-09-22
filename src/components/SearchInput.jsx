@@ -78,7 +78,7 @@ function SearchInput({ searchType }) {
           ref={inputRef}
           onKeyDown={(e) => {
             if (e.key === 'Enter') {
-              toggleInputSearch();
+              handleInputSearch();
             }
           }}
         />

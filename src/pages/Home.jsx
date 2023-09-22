@@ -1,4 +1,5 @@
 import IngredientButtonSero from '@/components/IngredientButtonSero';
+import MenuItem from '@/components/MenuItem';
 import SearchInput from '@/components/SearchInput';
 import SeeAll from '@/components/SeeAll';
 import Title from '@/components/Title';
@@ -16,7 +17,8 @@ function Home() {
         <Title size='xl' contents='오늘 뭐 먹지?'/>
         <SeeAll/>
       </div>
-      <Button type='button'>
+      <MenuItem />
+      <Button type='button' navigateTo='/fridgemenu'>
         내 냉장고 속 재료로 요리하기
       </Button>
     </div>

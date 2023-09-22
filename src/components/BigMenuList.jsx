@@ -30,19 +30,20 @@ function BigMenuList(){
     }
     getCookList();
   }, []);
-
+  
   cooksList.map((cook)=>{
     let tmp = 0;
     let cookIngre = cook.ingredients_keys;
     cookIngre.map((ingre)=>{
-      ingreList.includes(ingre) ? tmp+0 : tmp+1;
+      ingreList.includes(ingre) ? tmp=tmp+1 : tmp=tmp+0;
     })
-    if(tmp <= 1){
+    console.log('tmp : ', tmp)
+    if(tmp >= 1){
+      console.log('tmptmp : ', tmp);
       // 컴포넌트 출력
       return(
         <BigMenuButton key={cook.id} cook={cook}></BigMenuButton>   
       )
-      
     }
   })
 

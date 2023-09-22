@@ -1,16 +1,15 @@
-//! 임시 컴포넌트 입니다. 최종 배포시 삭제 예정.
-
 import { useState, useEffect } from "react";
 import { getPbImageURL } from "@/utils/getPbImageURL"
 import { Link } from "react-router-dom";
 
 function BigMenuButton(cook) {
+  console.log(222222222222222);
   // 전체 메뉴 정보
   const [menu, setMenu] = useState([]);
 
   setMenu(cook);
 
-  console.log(menu);
+  console.log('menu : ', menu);
   return (
     <div className=" flex flex-wrap gap-4 ">
         <div key={cook.id}>

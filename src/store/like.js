@@ -58,10 +58,6 @@ const useLikeStore = create((set, get) => ({
   },
 
   addLikedMenu: async (likedMenu) => {
-    // const record = await pb.collection('cooks').getFullList({
-    //   filter: `name = "${likedMenu}"`,
-    // });
-    // console.log(record[0].id);
     set((state) => ({
       ...state,
       likedMenuList: [...state.likedMenuList, likedMenu],

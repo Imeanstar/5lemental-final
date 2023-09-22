@@ -3,6 +3,7 @@ import SearchInput from '@/components/SearchInput';
 import SeeAll from '@/components/SeeAll';
 import Title from '@/components/Title';
 import Button from '@/components/button/Button';
+import FridgeMenu from './FridgeMenu';
 
 function Home() {
 

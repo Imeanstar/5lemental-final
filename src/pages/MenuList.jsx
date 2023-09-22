@@ -6,10 +6,19 @@ import pb from '@/api/pocketbase';
 import { Link } from 'react-router-dom';
 import Like from '@/components/like/Like';
 import useLikeStore from '@/store/like';
+import useAuthStore from '@/store/auth';
 
 function MenuList() {
+  const id = useAuthStore((state) => state.id);
   const { category, getMenu, setSelectedMenu } = useCategoryStore();
-  const { likedMenuList, getLikeList, setLikeList } = useLikeStore();
+  const {
+    likedMenuList,
+    likedMenuKeyList,
+    getLikeList,
+    setLikeList,
+    getLikeKeyList,
+    setLikeKeyList,
+  } = useLikeStore();
 
   const [menuNameList, setMenuNameList] = useState([]);
   const [fileNameList, setFileNameList] = useState([]);
@@ -46,9 +55,17 @@ function MenuList() {
 
   // 현 user 의 좋아요 메뉴 list 가져오기
   useEffect(() => {
-    getLikeList('h2s00').then((res) => {
+    getLikeList(id).then((res) => {
       const likes = res.map((item) => item.name);
       setLikeList(likes);
+    });
+  }, []);
+
+  useEffect(() => {
+    getLikeKeyList(id).then((res) => {
+      const keys = res.map((item) => item);
+      console.log('keys', keys);
+      setLikeKeyList(keys);
     });
   }, []);
 
@@ -56,6 +73,10 @@ function MenuList() {
   useEffect(() => {
     console.log(likedMenuList);
   }, [likedMenuList]);
+
+  useEffect(() => {
+    console.log(likedMenuKeyList);
+  }, [likedMenuKeyList]);
 
   return (
     <>

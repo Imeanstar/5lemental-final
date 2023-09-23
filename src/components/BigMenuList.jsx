@@ -4,6 +4,8 @@ import { getPbImageURL } from "@/utils/getPbImageURL"
 import { Link } from "react-router-dom";
 import useCategoryStore from '@/store/category';
 import useAuthStore from '@/store/auth';
+import Like from '@/components/like/Like';
+import useLikeStore from '@/store/like';
 
 function BigMenuList() {
   // 전체 메뉴 정보
@@ -14,6 +16,9 @@ function BigMenuList() {
   const { user } = useAuthStore();
   let temp = 0;
   let user2 = [];
+  const {
+    likedMenuList
+  } = useLikeStore();
 
   // 메뉴 이름을 받아 전역상태의 selectedMenu 에 저장하는 함수
   const keepMenuName = (name) => {
@@ -53,14 +58,14 @@ function BigMenuList() {
             })
           }
           console.log('item : ', item);
-          console.log('temp : ', temp);
+          // console.log('temp : ', temp);
         if(temp > 0 ){
           return(
           <div
             key={item.id}
             //! 여기!!! key={item}으로 하니까 이상하게 출력되는 이슈가 있었는데, item.id로 하니까 잘 출력이 되어요....
             //! 왜...... 결국 다른 item이면 다 item 다르고 같은 item이면 item.id도 같을텐데...
-            className="w-[129px] h-[157px] my-[10px] mx-2"
+            className="w-[129px] h-[157px] my-[10px] mx-2 relative"
           >
             <Link
               to="/recipedetail"
@@ -68,13 +73,21 @@ function BigMenuList() {
             >
               <img
                 src={getPbImageURL(item,'photo')}
-                alt="{item.name}"
+                alt={item.name}
                 className="w-full h-[131px] rounded-[10px]"
               />
               <p className="inline-block rounded-[10px] mt-[5px] px-[10px] pt-[5px] pb-[4px] -bg--fridge-skyblue font-dohyeon text-[11px]">
                 {item.name}
               </p>
             </Link>
+            <div className="buttonContainer w-5 h-5 absolute right-0 bottom-0">
+              <Like
+                  menuName={item.name}
+                  isLiked={likedMenuList?.includes(item.name)}
+                  gray
+              />
+            </div>
+            
           </div>
           )
         }

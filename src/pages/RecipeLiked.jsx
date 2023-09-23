@@ -11,11 +11,12 @@ function RecipeLiked() {
     setStatus('loading');
     async function fetchFoodList() {
       try {
-        const userList = await pb.collection('cooks').getFullList({
+        const cooksList = await pb.collection('cooks').getFullList({
           expand: 'key, description, user, image, summary',
         });
-        setData(userList); // 데이터를 data 상태 변수에 할당
+        setData(cooksList); // 데이터를 data 상태 변수에 할당
         console.log(data);
+
         setStatus('success'); // 데이터 로드가 완료되면 success 상태로 변경
       } catch (error) {
         if (!(error instanceof ClientResponseError)) {
@@ -42,7 +43,7 @@ function RecipeLiked() {
         <div className="container w-full max-w-[500px] mx-auto mb-[70px] flex flex-col justify-center items-center">
           <ul className="w-full">
             {data.map((item) => (
-              <MenuBox key={item.id} item={item} />
+              <MenuBox key={item.id} item={item} name={item.name} />
             ))}
           </ul>
         </div>

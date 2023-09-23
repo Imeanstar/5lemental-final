@@ -4,6 +4,7 @@ import SearchInput from '@/components/SearchInput';
 import SeeAll from '@/components/SeeAll';
 import Title from '@/components/Title';
 import Button from '@/components/button/Button';
+import FridgeMenu from './FridgeMenu';
 
 function Home() {
 
@@ -17,7 +18,7 @@ function Home() {
         <SeeAll/>
       </div>
       <MenuItem />
-      <Button type='button'>
+      <Button type='button' navigateTo='/fridgemenu'>
         내 냉장고 속 재료로 요리하기
       </Button>
     </div>

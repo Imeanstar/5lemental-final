@@ -17,7 +17,7 @@ function IngredientButtonGaro({ingredientName, print}) {
   // Zustand 상태 및 업데이트 함수
   const cart = useStore((state) => state.cart);
   const setCart = useStore((state) => state.setCart);
-
+  let user2 = [];
   useEffect(() => {
     setStatus('loading');
 
@@ -27,9 +27,11 @@ function IngredientButtonGaro({ingredientName, print}) {
         .getFullList();
 
       const userList = await client.collection('users').getFullList();
-
-      // 사용자 정보 추출
-      const user2 = userList[0];
+      userList.map((userArr)=>{
+        if(userArr.id == user){
+          user2 = userArr;
+        }
+      })
 
       // ingredientList 배열 순환 및 Zustand의 cart 상태 업데이트
       setCart(
@@ -84,6 +86,7 @@ if(print == 'Fridge'){
       );
 }
 else{
+  /* console.log(user); */
     return (
       <div>
         <ul className="flex flex-wrap gap-2 justify-around">
@@ -93,7 +96,7 @@ else{
                 <IngredientItemGaro
                   key={ingredient.id}
                   item={ingredient}
-                  user={user1}
+                  user={user}
                   stat={ingredient.stat}
                   print={print}
                 />

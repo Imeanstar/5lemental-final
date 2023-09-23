@@ -9,16 +9,20 @@ const client = new PocketBase(url);
 //? user : 현재 회원 정보 출력(매번 출력되면 너무 소모값 클거같은데 처음 한번만 가져오게 할 수는 없을까)
 //? stat : item재료를 user회원이 가지고 있는지 정보(가지고 있으면 1)
 export default function IngredientItemGaro({ item, user, stat, print }) {
+ /*  console.log('item : ',item);
+  console.log('user : ',user);
+  console.log('stat : ',stat);
+  console.log('print : ',print); */
   const changeStateOfCartItem = useStore(
     (state) => state.changeStateOfCartItem
   );
-
+  // console.log('user : ', user);
   async function handle(handleStat) {
+    
     try {
-      await client.collection('users').update(user.id, {
+      await client.collection('users').update(user, {
         [`ingredients_keys${handleStat === 0 ? '+' : '-'}`]: item.id,
       });
-
       changeStateOfCartItem(item.id, handleStat ? 0 : 1);
 
       // handleStat === 0 ? removeUserIngredient(item.id) : addUserIngredient(item.id)
@@ -33,7 +37,7 @@ export default function IngredientItemGaro({ item, user, stat, print }) {
     <button>
         <li
         key={item.id}
-        className="-bg--fridge-gray w-[133px] h-[77px] rounded-xl flex flex-row items-center my-[7px]"
+        className="-bg--fridge-bg-gray w-[133px] h-[77px] rounded-xl flex flex-row items-center my-[7px]"
       >
         <figure>
           <img

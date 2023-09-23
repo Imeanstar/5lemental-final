@@ -77,10 +77,10 @@ function Heading() {
 
   return (
     <>
-      <div className="wrapper max-w-[820px] m-auto relative pt-[20px] flex justify-center items-center">
-        <div className="container flex justify-center items-center">
+      <header className="w-screen flex justify-center items-center fixed top-0 left-0 -bg--fridge-white pb-4 z-[1000]">
+        <div className="wrapper max-w-[820px] w-full m-auto pt-[20px] relative flex justify-center items-center">
           <button
-            className="w-[20px] h-[20px] absolute left-[20px] top-[25px]"
+            className="w-[20px] h-[20px] absolute left-[20px] top-[20px]"
             onClick={() => navigate(-1)}
           >
             <img className="w-full h-full" src={arrowLeft} alt="뒤로가기" />
@@ -89,7 +89,7 @@ function Heading() {
             {title}
           </h1>
         </div>
-      </div>
+      </header>
     </>
   );
 }

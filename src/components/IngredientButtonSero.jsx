@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 function IngredientButtonSero () {
   // 내 재료 정보
@@ -36,33 +37,39 @@ function IngredientButtonSero () {
   }, []);
 
   return(
-    <div className='w-full max-w-[820px] m-auto'>
-      <Swiper
-        slidesPerView='auto'
-        spaceBetween={8}
-        freeMode={true}
-        modules={[FreeMode]}
-        className="mx-5 py-3"
-      >
-        {myIngredient.map((item) => (
-          <SwiperSlide
-            className="w-[78px] h-[95px] -bg--fridge-bg-gray border-none rounded-md flex flex-col justify-center self-center"
-            key={item.id}>
-            <div className="w-[62px] h-[62px] items-center mx-2">
-              <img
-                src={getPbImageURL(item,'photo')}
-                alt={item.name}
-                className='mx-auto'
-              />
-            </div>
+    <Swiper
+      slidesPerView='auto'
+      spaceBetween={8}
+      freeMode={true}
+      modules={[FreeMode]}
+      className="pt-[6px] pb-3"
+    >
+      {myIngredient === undefined ? (
+        <Link to='/addingredients' className='flex justify-center'>
+          <div className='text-center -bg--fridge-bg-gray rounded-3xl w-3/5 h-8 leading-8 text-sm'>
+            클릭하여 재료를 추가해보세요!🧐
+          </div>
+        </Link>
+      ) : (
+      myIngredient.map((item) => (
+        <SwiperSlide
+          className="w-[78px] h-[95px] -bg--fridge-bg-gray border-none rounded-md flex flex-col justify-center self-center"
+          key={item.id}>
+          <div className="w-[62px] h-[62px] items-center mx-2">
+            <img
+              src={getPbImageURL(item,'photo')}
+              alt={item.name}
+              className='mx-auto'
+            />
+          </div>
           <span className="font-dohyeon text-[12px] text-center mt-[6px]">
             {item.name}
           </span>
         </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  )
+      ))
+      )}
+    </Swiper>
+  );
 }
 
 export default IngredientButtonSero

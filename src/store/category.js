@@ -38,6 +38,55 @@ const useCategoryStore = create((set) => ({
 
     return nameResponse.items;
   },
+
+  getDescription: async (menuName) => {
+    const recipeResponse = await pb
+      .collection('cooks')
+      .getFullList({ filter: `name = "${menuName}"` });
+
+    const recipe = recipeResponse[0].description;
+    return recipe;
+  },
+
+  getIngredientsKeys: async (selectedMenu) => {
+    const ingredientsResponse = await pb
+      .collection('cooks')
+      .getFullList({ filter: `name = "${selectedMenu}"` });
+    const ingredientsKeys = ingredientsResponse[0].ingredients_keys;
+
+    set((state) => ({
+      ...state,
+      ingredientsKeys: ingredientsKeys,
+    }));
+
+    return ingredientsKeys;
+  },
+
+  getIngredientsName: async (ingredientsKey) => {
+    const ingredientsResponse = await pb
+      .collection('ingredients')
+      .getFullList({ filter: `id = "${ingredientsKey}"` });
+
+    console.log(ingredientsResponse[0].name);
+
+    return ingredientsResponse[0].name;
+  },
+
+  getIngredientsImage: async (ingredientsKey) => {
+    const ingredientsResponse = await pb
+      .collection('ingredients')
+      .getFullList({ filter: `id = "${ingredientsKey}"` });
+
+    const imageURL = pb.files.getUrl(
+      ingredientsResponse[0],
+      ingredientsResponse[0].photo,
+      {
+        thumb: '60x60',
+      }
+    );
+
+    return imageURL;
+  },
 }));
 
 export default useCategoryStore;

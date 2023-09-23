@@ -62,7 +62,7 @@ if(print == 'Fridge'){
     console.log(111);
     return (
       <div>
-        <ul className="flex flex-wrap justify-around">
+        <ul className="flex flex-wrap justify-center gap-4 mt-6">
           {cart?.map((ingredient) => {
             if((ingredient.id != 'undefined') && (user1.ingredients_keys != 'undefined') && (ingredient.id != null) && (user1.ingredients_keys != null)){
               let ingreid = ingredient.id;

@@ -1,6 +1,7 @@
 import pb from '@/api/pocketbase';
 import useSearchLogStore from '@/store/searchLog';
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // 다른 컴포넌트에서 가져올 때 아래의 { } 안에 쓰는 것이다. 저장된 정보를 MenuBox 컴포넌트에
 function SearchInput({ searchType }) {
@@ -14,6 +15,7 @@ function SearchInput({ searchType }) {
   // 검색 여부
   const [isSearched, setIsSearched] = useState(false);
 
+  const navigate = useNavigate();
   const { searchLog, setSearchLog } = useSearchLogStore();
 
   useEffect(() => {
@@ -54,6 +56,7 @@ function SearchInput({ searchType }) {
   const handleInputSearch = () => {
     const searchValue = inputRef.current.value;
     setSearchLog(searchValue);
+    navigate('/search');
     toggleInputSearch();
   };
 

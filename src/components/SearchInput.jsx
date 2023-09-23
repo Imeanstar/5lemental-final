@@ -1,6 +1,7 @@
 import pb from '@/api/pocketbase';
 import useSearchLogStore from '@/store/searchLog';
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // 다른 컴포넌트에서 가져올 때 아래의 { } 안에 쓰는 것이다. 저장된 정보를 MenuBox 컴포넌트에
 function SearchInput({ searchType }) {
@@ -14,7 +15,8 @@ function SearchInput({ searchType }) {
   // 검색 여부
   const [isSearched, setIsSearched] = useState(false);
 
-  const { searchLog, setSearchLog } = useSearchLogStore();
+  const navigate = useNavigate();
+  const { searchList, setSearchList } = useSearchLogStore();
 
   useEffect(() => {
     async function fetchList() {
@@ -44,6 +46,7 @@ function SearchInput({ searchType }) {
           ? cooks.filter((cook) => cook.includes(searchTerm))
           : ingredients.filter((ingredient) => ingredient.includes(searchTerm))
       );
+
       setIsSearched(true);
       inputRef.current.value = '';
     } else {
@@ -51,15 +54,29 @@ function SearchInput({ searchType }) {
     }
   };
 
+  const getSearchResult = () => {
+    if (searchResult.length > 0) {
+      setSearchList(searchResult);
+    } else {
+      setSearchList([]);
+    }
+  };
+
   const handleInputSearch = () => {
-    const searchValue = inputRef.current.value;
-    setSearchLog(searchValue);
     toggleInputSearch();
+    getSearchResult();
+    setTimeout(() => {
+      navigate('/search');
+    }, 1000);
   };
 
   useEffect(() => {
-    console.log(searchLog);
-  }, [searchLog]);
+    console.log(searchResult);
+  }, [searchResult]);
+
+  useEffect(() => {
+    console.log(searchList);
+  }, [searchList]);
 
   return (
     <>
@@ -86,17 +103,6 @@ function SearchInput({ searchType }) {
           onClick={handleInputSearch}
           aria-label="검색"
         ></button>
-      </div>
-      <div className="mt-4">
-        {searchResult.length > 0
-          ? searchResult.sort().map((cook, index) => (
-              <ul key={index} className="ml-5 text-sm">
-                <li>{cook}</li>
-              </ul>
-            ))
-          : isSearched && (
-              <div className="text-center mt-9">검색 결과가 없습니다.</div>
-            )}
       </div>
     </>
   );

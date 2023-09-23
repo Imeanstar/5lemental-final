@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 function IngredientButtonSero () {
   // 내 재료 정보
@@ -41,9 +42,16 @@ function IngredientButtonSero () {
       spaceBetween={8}
       freeMode={true}
       modules={[FreeMode]}
-      className="py-3"
+      className="pt-[6px] pb-3"
     >
-      {myIngredient.map((item) => (
+      {myIngredient === undefined ? (
+        <Link to='/addingredients' className='flex justify-center'>
+          <div className='text-center -bg--fridge-bg-gray rounded-3xl w-3/5 h-8 leading-8 text-sm'>
+            클릭하여 재료를 추가해보세요!🧐
+          </div>
+        </Link>
+      ) : (
+      myIngredient.map((item) => (
         <SwiperSlide
           className="w-[78px] h-[95px] -bg--fridge-bg-gray border-none rounded-md flex flex-col justify-center self-center"
           key={item.id}>
@@ -54,13 +62,14 @@ function IngredientButtonSero () {
               className='mx-auto'
             />
           </div>
-        <span className="font-dohyeon text-[12px] text-center mt-[6px]">
-          {item.name}
-        </span>
-      </SwiperSlide>
-      ))}
+          <span className="font-dohyeon text-[12px] text-center mt-[6px]">
+            {item.name}
+          </span>
+        </SwiperSlide>
+      ))
+      )}
     </Swiper>
-  )
+  );
 }
 
 export default IngredientButtonSero

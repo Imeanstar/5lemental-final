@@ -2,6 +2,7 @@ import { create } from 'zustand';
 
 const initialSearchLogState = {
   searchList: [],
+  isNavigated: true,
 };
 
 const useSearchLogStore = create((set) => ({
@@ -13,6 +14,14 @@ const useSearchLogStore = create((set) => ({
       searchList: searchItem,
     }));
     return searchItem;
+  },
+
+  setIsNavigated: (status) => {
+    set((state) => ({
+      ...state,
+      isNavigated: status,
+    }));
+    return status;
   },
 }));
 

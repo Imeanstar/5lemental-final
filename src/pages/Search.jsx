@@ -4,12 +4,15 @@ import SearchInput from '@/components/SearchInput';
 import useSearchLogStore from '@/store/search';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 function Search() {
-  const searchList = useSearchLogStore((state) => state.searchList);
+  const { searchList, isNavigated, setIsNavigated } = useSearchLogStore();
   const [cooksList, setCooksList] = useState([]);
-  const location = useLocation();
+
+  if (isNavigated) {
+    setIsNavigated(false);
+    console.log(isNavigated);
+  }
 
   useEffect(
     () =>
@@ -25,7 +28,7 @@ function Search() {
           console.log(error);
         }
       },
-    [searchList, location]
+    [searchList, isNavigated]
   );
 
   return (

@@ -4,6 +4,7 @@ import { create } from 'zustand';
 const USER_COLLECTION = 'users';
 
 const initialAuthState = {
+  id: '',
   isValid: false,
   user: null,
   token: '',
@@ -27,6 +28,7 @@ const authStore = (set) => ({
 
     set((state) => ({
       ...state,
+      id,
       isValid,
       user: model.id,
       token,

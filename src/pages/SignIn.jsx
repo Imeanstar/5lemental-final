@@ -1,38 +1,29 @@
 import InputBox from '@/components/InputBox';
-import { useState } from 'react';
-import debounce from '@/utils/debounce';
+// import { useState } from 'react';
+// import debounce from '@/utils/debounce';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '@/components/button/Button';
 import useAuthStore from '@/store/auth';
 import { useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useRef } from 'react';
 
 function SignIn() {
   const navigate = useNavigate();
-  const [formState, setFormState] = useState({
-    id: '',
-    password: '',
-  });
 
   const { isValid, signIn } = useAuthStore();
 
-  const handleInput = debounce((e) => {
-    const { name, value } = e.target;
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  }, 100);
+  const idRef = useRef('');
+  const passwordRef = useRef('');
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-    const { id, password } = formState;
 
-    console.log('id', id);
-    console.log('pw', password);
+    console.log('id', idRef.current.value);
+    console.log('pw', passwordRef.current.value);
     try {
-      await signIn(id, password);
+      await signIn(idRef.current.value, passwordRef.current.value);
     } catch (error) {
       toast.error('아이디 또는 비밀번호가 일치하지 않습니다.');
     }
@@ -77,10 +68,11 @@ function SignIn() {
               아이디
               <InputBox
                 id="id"
+                ref={idRef}
                 type="text"
                 name="id"
                 placeholder="아이디를 입력해주세요."
-                onChange={handleInput}
+                // onChange={handleInput}
               />
             </label>
             <label
@@ -90,10 +82,11 @@ function SignIn() {
               비밀번호
               <InputBox
                 id="password"
+                ref={passwordRef}
                 type="password"
                 name="password"
                 placeholder="비밀번호를 입력해주세요."
-                onChange={handleInput}
+                // onChange={handleInput}
               />
             </label>
             <div className="w-full h-[30px]"></div>

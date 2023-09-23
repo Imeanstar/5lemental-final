@@ -55,8 +55,8 @@ function IngredientButtonGaro({ingredientName, print}) {
 
   if (status === 'loading') {
     return  <div className=' flex justify-center my-20'>
-              <div className='text-center -bg--fridge-bg-gray rounded-3xl w-1/5 h-8 leading-8 text-sm'>
-                로딩 중...🧐
+              <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              로딩 중... 🏃🏻‍♀🏃🏻
               </div>
             </div>;
   }

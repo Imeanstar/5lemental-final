@@ -12,9 +12,6 @@ function Search() {
   if (isNavigated) {
     setIsNavigated(false);
     console.log(isNavigated);
-  } else {
-    setIsNavigated(true);
-    console.log(isNavigated);
   }
 
   useEffect(

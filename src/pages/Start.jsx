@@ -8,7 +8,7 @@ function Start() {
   return (
     <>
       <div
-        className="wapper w-screen h-screen px-[26px] py-[52px] -bg--fridge-gray  flex flex-nowrap flex-col "
+        className="wapper h-screen px-[26px] py-[52px] -bg--fridge-gray  flex flex-nowrap flex-col "
         onClick={handleEntry}
         onTouchEnd={handleEntry}
       >

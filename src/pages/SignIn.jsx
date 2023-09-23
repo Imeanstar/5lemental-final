@@ -11,27 +11,14 @@ import { useRef } from 'react';
 
 function SignIn() {
   const navigate = useNavigate();
-  // const [formState, setFormState] = useState({
-  //   id: '',
-  //   password: '',
-  // });
 
   const { isValid, signIn } = useAuthStore();
 
   const idRef = useRef('');
   const passwordRef = useRef('');
 
-  // const handleInput = debounce((e) => {
-  //   const { name, value } = e.target;
-  //   setFormState({
-  //     ...formState,
-  //     [name]: value,
-  //   });
-  // }, 100);
-
   const handleSignIn = async (e) => {
     e.preventDefault();
-    // const { id, password } = formState;
 
     console.log('id', idRef.current.value);
     console.log('pw', passwordRef.current.value);

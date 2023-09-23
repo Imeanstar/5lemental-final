@@ -4,10 +4,12 @@ import SearchInput from '@/components/SearchInput';
 import useSearchLogStore from '@/store/search';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Search() {
   const searchList = useSearchLogStore((state) => state.searchList);
   const [cooksList, setCooksList] = useState([]);
+  const location = useLocation();
 
   useEffect(
     () =>
@@ -23,11 +25,11 @@ function Search() {
           console.log(error);
         }
       },
-    [searchList]
+    [searchList, location]
   );
 
   return (
-    <div className="px-5 w-full max-w-[820px] m-auto mt-9">
+    <div className="px-5 w-full max-w-[820px] m-auto">
       <SearchInput searchType="menu"></SearchInput>
       {searchList.length > 0 ? (
         searchList.map((searchItem) =>

@@ -10,7 +10,8 @@ function AddIngredients() {
 
 
   return (  
-    <div className="max-w-[820px] m-auto">
+    <div className='px-5 w-full max-w-[820px] m-auto'>
+      {/* 검색창 컴포넌트 */}
       <div className="flex mt-6 relative">
         <input
           type='text'

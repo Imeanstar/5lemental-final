@@ -49,8 +49,8 @@ function RecipeDetail() {
 
   return (
     <>
-      <div className="wrapper w-screen h-full px-[16px] pt-[20px] -bg--fridge-white flex flex-wrap flex-col justify-center">
-        <div className="container max-w-[820px] mx-auto mb-[70px] flex flex-col justify-center items-center">
+      <div className="wrapper h-full px-5 pt-[20px] -bg--fridge-white flex flex-wrap flex-col justify-center">
+        <div className="container max-w-[820px] mx-auto flex flex-col justify-center items-center">
           <div className="imageContainer max-w-[500px] flex justify-center mx-auto mb-[20px]">
             <img
               className=" rounded-[10px] flex justify-center items-center"

@@ -1,16 +1,16 @@
 import { create } from 'zustand';
 
 const initialSearchLogState = {
-  searchLog: '',
+  searchList: [],
 };
 
 const useSearchLogStore = create((set) => ({
   ...initialSearchLogState,
 
-  setSearchLog: (searchItem) => {
+  setSearchList: (searchItem) => {
     set((state) => ({
       ...state,
-      searchLog: searchItem,
+      searchList: searchItem,
     }));
     return searchItem;
   },

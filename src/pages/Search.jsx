@@ -25,7 +25,7 @@ function Search() {
   );
 
   return (
-    <div className="px-5 w-full max-w-[820px] m-auto mt-9">
+    <div className="px-5 w-full max-w-[820px] m-auto">
       <SearchInput searchType="menu"></SearchInput>
       {searchList.length > 0 ? (
         searchList.map((searchItem) =>

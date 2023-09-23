@@ -42,7 +42,7 @@ function MenuItem() {
     spaceBetween={5}
     freeMode={true}
     modules={[FreeMode]}
-    className="py-3"
+    className="pt-3 pb-5"
     >
       {menu.map((item) => (
         <SwiperSlide

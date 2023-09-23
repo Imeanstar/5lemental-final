@@ -39,14 +39,12 @@ function RecipeLiked() {
 
   return (
     <>
-      <div className="wrapper px-5 w-full max-w-[820px] m-auto h-full pt-[20px] -bg--fridge-white flex flex-wrap flex-col justify-center">
-        <div className="container w-full max-w-[500px] mx-auto flex flex-col justify-center items-center">
-          <ul className="w-full">
-            {data.map((item) => (
-              <MenuBox key={item.id} item={item} name={item.name} />
-            ))}
-          </ul>
-        </div>
+      <div className="wrapper px-5 w-full max-w-[820px] m-auto h-full pt-[20px] -bg--fridge-white">
+        <ul className="w-full flex flex-col gap-3 justify-center">
+          {data.map((item) => (
+            <MenuBox key={item.id} item={item} name={item.name} />
+          ))}
+        </ul>
       </div>
     </>
   );

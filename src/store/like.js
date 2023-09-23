@@ -17,10 +17,17 @@ const useLikeStore = create((set, get) => ({
 
     console.log(likeResponse.items[0].expand.cooks_keys);
 
-    set((state) => ({
-      ...state,
-      likedMenuList: likeResponse.items[0].expand.cooks_keys,
-    }));
+    if (likeResponse.items[0].expand.cooks_keys !== undefined) {
+      set((state) => ({
+        ...state,
+        likedMenuList: likeResponse.items[0].expand.cooks_keys,
+      }));
+    } else {
+      set((state) => ({
+        ...state,
+        likedMenuList: [],
+      }));
+    }
 
     return likeResponse.items[0].expand.cooks_keys;
   },
@@ -40,10 +47,17 @@ const useLikeStore = create((set, get) => ({
 
     console.log(likeResponse.items[0].cooks_keys);
 
-    set((state) => ({
-      ...state,
-      likedMenuKeyList: likeResponse.items[0].cooks_keys,
-    }));
+    if (likeResponse.items[0].cooks_keys !== undefined) {
+      set((state) => ({
+        ...state,
+        likedMenuKeyList: likeResponse.items[0].cooks_keys,
+      }));
+    } else {
+      set((state) => ({
+        ...state,
+        likedMenuKeyList: [],
+      }));
+    }
 
     return likeResponse.items[0].cooks_keys;
   },
@@ -58,6 +72,10 @@ const useLikeStore = create((set, get) => ({
   },
 
   addLikedMenu: async (likedMenu) => {
+    const state = get();
+    if (state.likedMenuList === undefined) {
+      state.likedMenuList = [];
+    }
     set((state) => ({
       ...state,
       likedMenuList: [...state.likedMenuList, likedMenu],
@@ -67,6 +85,11 @@ const useLikeStore = create((set, get) => ({
   },
 
   removeLikedMenu: (likedMenu) => {
+    const state = get();
+    if (state.likedMenuList === undefined) {
+      state.likedMenuList = [];
+    }
+
     set((state) => ({
       ...state,
       likedMenuList: state.likedMenuList.filter((menu) => menu !== likedMenu),

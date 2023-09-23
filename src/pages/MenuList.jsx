@@ -56,27 +56,17 @@ function MenuList() {
   // 현 user 의 좋아요 메뉴 list 가져오기
   useEffect(() => {
     getLikeList(id).then((res) => {
-      const likes = res.map((item) => item.name);
+      const likes = res?.map((item) => item.name);
       setLikeList(likes);
     });
   }, []);
 
   useEffect(() => {
     getLikeKeyList(id).then((res) => {
-      const keys = res.map((item) => item);
-      console.log('keys', keys);
+      const keys = res?.map((item) => item);
       setLikeKeyList(keys);
     });
   }, []);
-
-  // 좋아요 메뉴 list 확인
-  useEffect(() => {
-    console.log(likedMenuList);
-  }, [likedMenuList]);
-
-  useEffect(() => {
-    console.log(likedMenuKeyList);
-  }, [likedMenuKeyList]);
 
   return (
     <>
@@ -103,8 +93,8 @@ function MenuList() {
               <div className="buttonContainer w-5 h-5 absolute right-0 bottom-0">
                 <Like
                   menuName={name}
-                  isLiked={likedMenuList.includes(name)}
-                  gray="true"
+                  isLiked={likedMenuList?.includes(name)}
+                  gray
                 />
               </div>
             </div>

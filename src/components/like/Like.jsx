@@ -7,7 +7,7 @@ import {
 import useAuthStore from '@/store/auth';
 import useLikeStore from '@/store/like';
 
-function Like({ menuName = '', isLiked = false, gray = '' }) {
+function Like({ menuName = '', isLiked = false, gray = false, ...restProps }) {
   const user = useAuthStore((state) => state.user);
   const {
     addLikedMenu,
@@ -36,7 +36,11 @@ function Like({ menuName = '', isLiked = false, gray = '' }) {
 
   return (
     <>
-      <button type="button" onClick={() => handleLikeList(isLiked)}>
+      <button
+        type="button"
+        onClick={() => handleLikeList(isLiked)}
+        {...restProps}
+      >
         {gray ? (
           <img
             src={isLiked ? heartFill : heartLine}

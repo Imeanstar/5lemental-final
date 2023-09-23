@@ -1,5 +1,5 @@
 .nav{
-  @apply fixed left-0 right-0 bottom-0 bg-white
+  @apply fixed left-0 right-0 bottom-0 bg-white z-[1000]
     after:content-['']
     after:absolute
     after:top-0

@@ -1,7 +1,7 @@
 import pb from '@/api/pocketbase';
 import MenuBox from '@/components/MenuBox';
 import SearchInput from '@/components/SearchInput';
-import useSearchLogStore from '@/store/searchLog';
+import useSearchLogStore from '@/store/search';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -21,7 +21,7 @@ function Search() {
           console.log(error);
         }
       },
-    [searchList]
+    []
   );
 
   return (

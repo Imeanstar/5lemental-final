@@ -6,8 +6,9 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 function Search() {
-  const searchLog = useSearchLogStore((state) => state.searchLog);
+  const searchList = useSearchLogStore((state) => state.searchList);
   const [cooksList, setCooksList] = useState([]);
+
   useEffect(
     () =>
       async function fetchFoodList() {
@@ -20,17 +21,27 @@ function Search() {
           console.log(error);
         }
       },
-    [searchLog]
+    [searchList]
   );
 
   return (
     <div className="px-5 w-full max-w-[820px] m-auto mt-9">
       <SearchInput searchType="menu"></SearchInput>
-      {cooksList
-        .filter((item) => item.name === searchLog)
-        .map((item, index) => (
-          <MenuBox key={index} item={item} name={item.name} />
-        ))}
+      {searchList.length > 0 ? (
+        searchList.map((searchItem) =>
+          cooksList
+            .filter((item) => item.name === searchItem)
+            .map((item, index) => (
+              <MenuBox key={index} item={item} name={item.name} />
+            ))
+        )
+      ) : (
+        <div className="container flex justify-center w-full mt-5">
+          <div className="text-center -bg--fridge-bg-gray rounded-3xl h-8 leading-8 text-sm px-3">
+            흠.. 검색 결과가 없군요. 🧐
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import BigMenuList from "@/components/BigMenuList"
 
 function FridgeMenu () {
   return(
-    <div className='h-[450px] flex justify-around flex-wrap flex-row overflow-y-scroll max-w-[820px] m-auto min-w-[320px]'>
+    <div className='px-5 pt-4 w-full max-w-[820px] m-auto flex flex-wrap gap-4 justify-center'>
       <BigMenuList></BigMenuList>
     </div>
   )

@@ -1,13 +1,18 @@
 import pb from '@/api/pocketbase';
 import MenuBox from '@/components/MenuBox';
 import SearchInput from '@/components/SearchInput';
-import useSearchLogStore from '@/store/searchLog';
+import useSearchLogStore from '@/store/search';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
 function Search() {
-  const searchList = useSearchLogStore((state) => state.searchList);
+  const { searchList, isNavigated, setIsNavigated } = useSearchLogStore();
   const [cooksList, setCooksList] = useState([]);
+
+  if (isNavigated) {
+    setIsNavigated(false);
+    console.log(isNavigated);
+  }
 
   useEffect(
     () =>
@@ -17,11 +22,13 @@ function Search() {
             expand: 'key, description, user, image, summary',
           });
           setCooksList(cooksList); // 데이터를 data 상태 변수에 할당
+          console.log('Search 페이지 시동');
+          console.log(searchList);
         } catch (error) {
           console.log(error);
         }
       },
-    [searchList]
+    [searchList, isNavigated]
   );
 
   return (

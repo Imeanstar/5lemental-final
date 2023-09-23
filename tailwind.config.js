@@ -20,8 +20,8 @@ export default {
         '--fridge-red': '#F83319',
       },
       backgroundImage: {
-        'search-icon': "url('./src/assets/icons/search.svg')",
-      }
+        'search-icon': "url('@/assets/icons/search.svg')",
+      },
     },
   },
   plugins: [],

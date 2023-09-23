@@ -1,5 +1,5 @@
 import pb from '@/api/pocketbase';
-import useSearchLogStore from '@/store/searchLog';
+import useSearchLogStore from '@/store/search';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,10 +10,6 @@ function SearchInput({ searchType }) {
   // 검색 요소 집합 ( 서버에서 데이터 가져오기 )
   const [cooks, setCooks] = useState([]);
   const [ingredients, setIngredients] = useState([]);
-  // 검색된 결과 집합 ( 사용자 검색 요청 시 처리 )
-  const [searchResult, setSearchResult] = useState([]);
-  // 검색 여부
-  const [isSearched, setIsSearched] = useState(false);
 
   const navigate = useNavigate();
   const { searchList, setSearchList } = useSearchLogStore();
@@ -41,22 +37,11 @@ function SearchInput({ searchType }) {
     const searchTerm = inputRef.current.value.trim();
 
     if (searchTerm) {
-      setSearchResult(
+      setSearchList(
         searchType === 'menu'
           ? cooks.filter((cook) => cook.includes(searchTerm))
           : ingredients.filter((ingredient) => ingredient.includes(searchTerm))
       );
-
-      setIsSearched(true);
-      inputRef.current.value = '';
-    } else {
-      setSearchResult([]);
-    }
-  };
-
-  const getSearchResult = () => {
-    if (searchResult.length > 0) {
-      setSearchList(searchResult);
     } else {
       setSearchList([]);
     }
@@ -64,15 +49,10 @@ function SearchInput({ searchType }) {
 
   const handleInputSearch = () => {
     toggleInputSearch();
-    getSearchResult();
     setTimeout(() => {
       navigate('/search');
     }, 1000);
   };
-
-  useEffect(() => {
-    console.log(searchResult);
-  }, [searchResult]);
 
   useEffect(() => {
     console.log(searchList);

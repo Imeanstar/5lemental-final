@@ -101,7 +101,11 @@ function MenuList() {
                 </p>
               </Link>
               <div className="buttonContainer w-5 h-5 absolute right-0 bottom-0">
-                <Like menuName={name} isLiked={likedMenuList.includes(name)} />
+                <Like
+                  menuName={name}
+                  isLiked={likedMenuList.includes(name)}
+                  gray
+                />
               </div>
             </div>
           ))}

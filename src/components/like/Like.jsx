@@ -1,8 +1,13 @@
-import { heartLine, heartFill } from '@/assets/icons/svg-icons.js';
+import {
+  heartLine,
+  heartFill,
+  heartFillPri,
+  heartLinePri,
+} from '@/assets/icons/svg-icons.js';
 import useAuthStore from '@/store/auth';
 import useLikeStore from '@/store/like';
 
-function Like({ menuName = '', isLiked = false }) {
+function Like({ menuName = '', isLiked = false, gray = false }) {
   const user = useAuthStore((state) => state.user);
   const {
     addLikedMenu,
@@ -32,7 +37,19 @@ function Like({ menuName = '', isLiked = false }) {
   return (
     <>
       <button type="button" onClick={() => handleLikeList(isLiked)}>
-        <img src={isLiked ? heartFill : heartLine} alt="" className="w-5 h-5" />
+        {gray ? (
+          <img
+            src={isLiked ? heartFill : heartLine}
+            alt=""
+            className="w-5 h-5"
+          />
+        ) : (
+          <img
+            src={isLiked ? heartFillPri : heartLinePri}
+            alt=""
+            className="w-4 h-4"
+          />
+        )}
       </button>
     </>
   );

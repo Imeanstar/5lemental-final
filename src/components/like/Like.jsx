@@ -7,7 +7,7 @@ import {
 import useAuthStore from '@/store/auth';
 import useLikeStore from '@/store/like';
 
-function Like({ menuName = '', isLiked = false, gray = false }) {
+function Like({ menuName = '', isLiked = false, gray = '' }) {
   const user = useAuthStore((state) => state.user);
   const {
     addLikedMenu,

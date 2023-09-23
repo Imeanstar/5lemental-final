@@ -104,7 +104,7 @@ function MenuList() {
                 <Like
                   menuName={name}
                   isLiked={likedMenuList.includes(name)}
-                  gray
+                  gray="true"
                 />
               </div>
             </div>

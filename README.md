@@ -5,6 +5,7 @@
 냉장고에 있는 재료를 최대한으로 활용하여 오늘의 메뉴를 추천해주는 서비스
 
 **⭐️ 배포 주소**
+https://make-my-fridge-be-empty.netlify.app/
 
 ---
 
@@ -31,18 +32,35 @@
 <br><br>
 
 ---
+## 🚙✨사용 기술 스택
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+<img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white">
+<img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
+<img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white">
+<img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/Zustand-443D36?style=for-the-badge&logo=AmazoneRoute53&logoColor=white">
+
+---
 
 ## 🗄️ 프로젝트 관리
 
 ### 🗃️ Git Project
 
-- git project 링크:
+- git project 링크: https://github.com/FRONTENDSCHOOL6/5lemental-final
 
 ---
 
 ## 🎨 기획 및 디자인
 
-- FIGMA 링크:
+- FIGMA 링크: https://www.figma.com/file/JPKVOCvLBIeTRKlR7CpMzu/%EB%B9%84%EC%9A%B0%EC%9E%90-%EB%83%89%EC%9E%A5%EA%B3%A0-%EC%8B%9C%EC%95%88?type=design&node-id=0%3A1&mode=design&t=5fKObW8eYaPEee8R-1
 
 ---
 
@@ -53,6 +71,11 @@
 | FIGMA 시안                                                                                                                                   | 스타일링 및 기능 구현                                                                                                                                                                                            |
 | :------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/649aff3d-2ed1-4236-a153-a5e0bb0515ce"> | **1. UI** <br/> [완료] FIGMA 시안 구현 <br/> [완료] 반응형 UI (max-width: 냉장고 400px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [완료] 화면 클릭 또는 터치 시, 다음 페이지 (/signin) 로 이동 |
+### 실제 구현 화면
+| 스마트폰 화면 | 태블릿 화면 |
+|:-------------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/e6f159d8-4b72-4b64-8cf9-3d41b43f8c56" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/31a21893-d1f1-409a-b21f-e85fd8e5eb5d" width="210" height="295"/>|
+
 
 ### 2. SignIn
 
@@ -60,17 +83,33 @@
 | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/947f2040-5cb1-45b1-b264-48194c0abbd5"> | **1. UI** <br/> [완료] FIGMA 시안 구현 <br/> [완료] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [완료] 포켓베이스 user 데이터와 이이디 및 비밀번호 일치여부 확인 <br/> [완료] 일치여부 확인 후, 로그인 버튼 클릭 시 /home 으로 이동 <br/> [진행중] user 의 id, token, isValid 여부 zustand 로 상태관리 <br/> [진행중] 아이디 또는 비밀번호 불일치 시, 경고 문구 렌더링 <br/><br/> **3. 사용 컴포넌트** <br/> < InputBox /> <br/> < Button /> |
 
+### 실제 구현 화면
+| 스마트폰 화면 | 태블릿 화면 |
+|:-------------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/5640028c-463d-4caa-bb56-a7f5061ab27c" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/2b1d085f-6d49-4d27-b5ec-2c74aaf1d379" width="210" height="295"/>|
+
 ### 3. SignUp
 
 | FIGMA 시안                                                                                                                                   | 스타일링 및 기능 구현                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/74cfa9ea-4a7e-42e7-aa44-3ba02704b527"> | **1. UI** <br/> [ ] FIGMA 시안 구현 <br/> [ ] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [ ] 포켓베이스 user 데이터와 아이디 중복 여부 확인 <br/> [ ] 사용 가능한 아이디로 확인된 경우 체크 아이콘 렌더링 <br/> [ ] 사용할 수 없는 아이디의 경우, 알림 문구 렌더링 <br/> [ ] 닉네임 중복 여부 확인 <br/> [ ] 사용할 수 없는 닉네임의 경우, 알림 문구 렌더링 <br/> [ ] 비밀번호와 비밀번호 일치여부 확인 및 불일치 시, 알림 문구 렌더링 <br/> [ ] 비밀번호 정규식 조건에 맞지 않는 경우, 알림 문구 렌더링 <br/> [ ] 약관 동의 항목 체크 시 체크박스 색상 변경 <br/> [ ] 전체 약관 동의 시 모든 체크박스 색상 변경 <br/> [ ] 회원가입 버튼 클릭 시, 강비 완료된 데이터 pocketbase 에 create 함 <br/> <br/> **3. 사용 컴포넌트** <br/> < InputBox /> <br/> < Button /> |
 
+### 실제 구현 화면
+| 스마트폰 화면 | 태블릿 화면 |
+|:-------------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/e84e4024-1dcc-4d23-9d05-5dc34dbdd519" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/1c8b13a8-e934-478b-9788-f8d378e93f83" width="210" height="295"/>|
+
 ### 4. Home
 
 | FIGMA 시안                                                                                                                                   | 스타일링 및 기능 구현                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/fef1d659-83c1-4d9f-a796-dcad061681c5"> | **1. UI** <br/> [ ] FIGMA 시안 구현 <br/> [ ] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [ ] 검색창에 값 입력과 동시에 /search 페이지로 이동 <br/> [ ] 내 재료 - 해당 계정에서 추가되었던 재료 목록 pocketbase 와 통신하여 렌더링 <br/> [ ] 오늘 뭐 먹지? - 현재 서비스 내에 있는 전체 메뉴 목록 랜더링 (랜더링 시, 요리 사진, 요리명, 주요 재료 랜더링 필요) <br/> [ ] 오늘 뭐 먹지? - 좌우 스크롤로 이동하며, 최대 5개까지의 메뉴 렌더링 <br/> [ ] 전체보기 - /menulist 페이지로 이동 <br/> [ ] 내 냉장고 속 재료로 요리하기 버튼 - /fridge 페이지로 이동 <br/> [ ] 메뉴 카드 선택 시, 해당 /recipedetail 페이지로 이동 <br/><br/> **3. 사용 컴포넌트** <br/> < Heading /> <br/> < SearchInput /> <br/> < IngredientButtonSaero /> <br/> < MenuItem /> <br/> < Button /> <br/> < NavBar /> |
+
+### 실제 구현 화면
+| 스마트폰 화면 | 태블릿 화면 |
+|:-------------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/e84e4024-1dcc-4d23-9d05-5dc34dbdd519" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/1c8b13a8-e934-478b-9788-f8d378e93f83" width="210" height="295"/>|
+
 
 ### 5. Search
 

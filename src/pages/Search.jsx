@@ -17,11 +17,13 @@ function Search() {
             expand: 'key, description, user, image, summary',
           });
           setCooksList(cooksList); // 데이터를 data 상태 변수에 할당
+          console.log('Search 페이지 시동');
+          console.log(searchList);
         } catch (error) {
           console.log(error);
         }
       },
-    []
+    [searchList]
   );
 
   return (

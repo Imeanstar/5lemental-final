@@ -41,7 +41,7 @@ function AddIngredients() {
         ></IngredientButtonGaro>
         {/* 여기서 page전달 -> button에서 Add면 전체 출력, Fridge면 보유한 것만 출력하도록 -> item에서 Add면 누르게, Fridge면 못누르게 */}
       </div>
-      <div className='items-center flex flex-row mx-[21px]'>
+      <div className='mx-[21px] mt-4'>
         <Button type="button" navigateTo="-1">재료 추가</Button>
       </div>
     </div>

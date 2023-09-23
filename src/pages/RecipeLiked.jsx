@@ -30,11 +30,20 @@ function RecipeLiked() {
   }, []);
 
   if (status === 'loading') {
-    return <div>Loading...</div>;
+    return <div className=' flex justify-center my-20'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              로딩 중... 🏃🏻‍♀🏃🏻
+            </div>
+          </div>;
   }
 
   if (status === 'error') {
-    return <div>Error loading data</div>;
+    return <div className=' flex justify-center my-20'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              🧑🏻‍🔧서버 점검 중 입니다.👨🏻‍🔧<br/>
+              불편을 드려 죄송합니다😞
+            </div>
+          </div>;
   }
 
   return (

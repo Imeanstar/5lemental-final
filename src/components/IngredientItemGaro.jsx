@@ -16,10 +16,11 @@ export default function IngredientItemGaro({ item, user, stat, print }) {
   const changeStateOfCartItem = useStore(
     (state) => state.changeStateOfCartItem
   );
-
+  // console.log('user : ', user);
   async function handle(handleStat) {
+    
     try {
-      await client.collection('users').update(user.id, {
+      await client.collection('users').update(user, {
         [`ingredients_keys${handleStat === 0 ? '+' : '-'}`]: item.id,
       });
       changeStateOfCartItem(item.id, handleStat ? 0 : 1);

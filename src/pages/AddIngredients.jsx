@@ -10,7 +10,7 @@ function AddIngredients() {
 
 
   return (  
-    <div className="h-screen max-w-[820px] m-auto">
+    <div className="max-w-[820px] m-auto">
       <div className='flex mt-[20px] ml-[20px] relative '>
         <input
           type='text'

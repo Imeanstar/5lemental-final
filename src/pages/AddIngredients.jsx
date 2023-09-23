@@ -34,8 +34,7 @@ function AddIngredients() {
           >
         </button>
       </div>
-      <div className='h-[10px]'></div>
-      <div className="w-screen h-[306px] max-w-[820px] m-auto min-w-[320px]">
+      <div className="w-screen h-[306px] max-w-[820px] m-auto min-w-[320px] mt-4">
         <IngredientButtonGaro
           ingredientName={inputValue}
           print={Add}

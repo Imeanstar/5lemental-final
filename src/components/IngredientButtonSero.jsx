@@ -43,15 +43,15 @@ function IngredientButtonSero () {
   if (status === 'loading') {
     return <div className=' flex justify-center my-10'>
             <div className='text-center -bg--fridge-bg-gray rounded-3xl px-10 h-9 leading-9 text-base font-nanum'>
-              🍖🥬냉장고에 뭐 있더라?🥔🥓🥚
+              🍖🥬 냉장고에 뭐 있더라? 🥔🥓🥚
             </div>
           </div>;
   }
 
   if (status === 'error') {
-    return <div className=' flex justify-center my-20'>
-            <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
-              🧑🏻‍🔧서버 점검 중 입니다.👨🏻‍🔧<br/>
+    return <div className=' flex justify-center my-5'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl p-4 leading-9 text-base font-nanum'>
+              🧑🏻‍🔧서버 점검 중 입니다 👨🏻‍🔧<br/>
               불편을 드려 죄송합니다😞
             </div>
           </div>;

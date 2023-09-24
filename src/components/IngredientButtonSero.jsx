@@ -41,8 +41,8 @@ function IngredientButtonSero () {
   }, []);
 
   if (status === 'loading') {
-    return <div className=' flex justify-center my-10'>
-            <div className='text-center -bg--fridge-bg-gray rounded-3xl px-10 h-9 leading-9 text-base font-nanum'>
+    return <div className=' flex justify-center my-5'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl px-6 py-3 text-base font-nanum'>
               🍖🥬 냉장고에 뭐 있더라? 🥔🥓🥚
             </div>
           </div>;

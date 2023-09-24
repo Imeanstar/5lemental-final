@@ -11,11 +11,12 @@ https://make-my-fridge-be-empty.netlify.app/
 ## 🚀목차
 1. [📸 Project 미리보기](#미리보기)
 1. [👩‍💻 Project 팀](#팀)
+1. [📂 파일 구성](#파일구성)
 1. [🔨 컨벤션](#컨벤션)
 1. [🗄️ 프로젝트 관리](#프로젝트관리)
 1. [🙋🏼‍♀️ 페이지 별 설명](#페이지별설명)
 1. [📊 Project 사이트 성능 검사 결과](#성능검사결과)
-1. [🎈 한줄소감](#한줄소감)
+1. [🎈 소감](#한줄소감)
 
 ---
 <a name="미리보기"></a>
@@ -108,8 +109,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ---
 <a name="🚙✨사용 기술 스택"></a>
 ## 🚙✨사용 기술 스택
-<p style="font-size:18px;">HTML & CSS</p>
-
+HTML & CSS
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> <br> 
 Language
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"><br>
@@ -126,10 +126,96 @@ DATABASE
 Disign & Communication
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <br>
  
+---
+
+<a name="파일구성"></a>
+## 📂 파일 구성
+
+<details>
+<summary>폴더 구성</summary>
+
+```
+📦src
+ ┣ 📂api
+ ┃ ┗ 📜pocketbase.jsx
+ ┣ 📂components
+ ┃ ┣ 📂button
+ ┃ ┃ ┣ 📜Button.jsx
+ ┃ ┃ ┗ 📜Button.module.css
+ ┃ ┣ 📂categoryButton
+ ┃ ┃ ┣ 📜CategoryButton.jsx
+ ┃ ┃ ┗ 📜CategoryButton.module.css
+ ┃ ┣ 📂like
+ ┃ ┃ ┗ 📜Like.jsx
+ ┃ ┣ 📂likeButton
+ ┃ ┃ ┣ 📜LikeButton.jsx
+ ┃ ┃ ┗ 📜LikeButton.module.css
+ ┃ ┣ 📂navBar
+ ┃ ┃ ┣ 📜NavBar.jsx
+ ┃ ┃ ┗ 📜Component.module.css
+ ┃ ┣ 📜BigMenuList.jsx
+ ┃ ┣ 📜Heading.jsx
+ ┃ ┣ 📜IngredientButtonGaro.jsx
+ ┃ ┣ 📜IngredientButtonSero.jsx
+ ┃ ┣ 📜IngredientItem.jsx
+ ┃ ┣ 📜IngredientItemGaro.jsx
+ ┃ ┣ 📜InputBox.jsx
+ ┃ ┣ 📜MenuBox.jsx
+ ┃ ┣ 📜MenuImge.jsx
+ ┃ ┣ 📜MenuImgeItem.jsx
+ ┃ ┣ 📜MenuItem.jsx
+ ┃ ┣ 📜SearchInput.jsx
+ ┃ ┣ 📜SeeAll.jsx
+ ┃ ┗ 📜Title.jsx
+ ┣ 📂hooks
+ ┃ ┗ 📜list.js
+ ┣ 📂layout
+ ┃ ┗ 📜RootLayout.jsx
+ ┣ 📂payges
+ ┃ ┣ 📜Footer.jsx
+ ┃ ┣ 📜Header.jsx
+ ┃ ┣ 📜Nav.jsx
+ ┃ ┗ 📜RootLayOut.jsx
+ ┣ 📂pages
+ ┃ ┣ 📂signUp
+ ┃ ┃ ┣ 📜SignUp.jsx
+ ┃ ┃ ┗ 📜SignUp.module.css
+ ┃ ┣ 📜AddIngredients.jsx
+ ┃ ┣ 📜FridgeMenu.jsx
+ ┃ ┣ 📜Home.jsx
+ ┃ ┣ 📜MenuList.jsx
+ ┃ ┣ 📜MyFridge.jsx
+ ┃ ┣ 📜MyProfile.jsx
+ ┃ ┣ 📜RecipeDetail.jsx
+ ┃ ┣ 📜RecipeLiked.jsx
+ ┃ ┣ 📜Search.jsx
+ ┃ ┣ 📜SignIn.jsx
+ ┃ ┗ 📜Start.jsx
+ ┣ 📂store
+ ┃ ┣ 📜auth.js
+ ┃ ┣ 📜category.js
+ ┃ ┣ 📜like.js
+ ┃ ┣ 📜search.js
+ ┃ ┗ 📜storeState.js
+ ┣ 📂styles
+ ┃ ┗ 📜tailwind.css
+ ┣ 📂utils
+ ┃ ┣ 📜debounce.js
+ ┃ ┗ 📜getPbImageUrl.js
+ ┣ 📜App.jsx
+ ┣ 📜main.jsx
+ ┗ 📜routes.jsx
+```
+
+</details>
+
+
 
 ---
-# 🪓🔨 컨벤션
+
 <a name="컨벤션"></a>
+# 🪓🔨 컨벤션
+
 <details>
 <summary style="font-size:20px;font-weight:bold;">Code Convention</summary>
 
@@ -433,13 +519,78 @@ checkNumber()
 </details>
 
 ---
+
 <a name="한줄소감"></a>
-## 🎈 한줄소감
+## 🎈 소감
 
 #### 김다연
 
+```
+Keep
+
+123
+
+Problem
+
+123
+
+Try
+
+123
+```
 #### 김민성
+
+```
+Keep
+
+해결하고자 하는 문제를 구글링, 질의응답을 통해 모두 해결했고, 
+처음 목표로 잡았던 내용은 달성하였다. 
+최대한 열심히 팀원들과 소통하려 노력하였다.
+
+Problem
+
+리액트에 대한 이해도가 많이 부족했다. 
+수료 이후에도 리액트에 대한 학습을 더 해나가야겠다고 다짐하게 되었다.
+왜 회사에서 커뮤니케이션 능력을 주요하게 보는지 이해할 수 있는 시간이었다.
+
+Try
+
+수료 이후 제공되는 VOD를 최대한 많이 시청하여 리액트의 이해도를 올린다.
+더 많은 사람들과 협업하는 경험을 가져본다.
+
+```
 
 #### 김성재
 
+```
+Keep
+
+파일이나 커밋의 이름과 규칙을 미리 지정해서 다른 팀원이 봤을때 어디 페이지에 무엇이 바뀌었는지 바로 알수 있게 하는 것이 좋았다.
+
+Problem
+
+개인적으로 나의 자바스크립트와 리엑트의 공부가 부족했다. 함수에 대한 이해도가 많이 낮아 코드를 짜거나 수정하기가 매우 어려웠다.
+
+Try
+
+각자 맡은 부분에 기한을 잡아두고 일정을 정해서 진행상황이나 코드리뷰 시간을 만든다.
+```
 #### 김희소
+
+```
+Keep
+
+커밋 메시지를 자세히 남기니 pr 남길 때 바뀐 것들을 쉽게 파악할 수 있어 좋았다. 뿌듯함은 덤!
+issue 와 milestone 을 이용해 나의 진행 상황을 정리하니 스스로 파악하고 기록하는 데에 도움이 되었다.
+
+
+Problem
+
+코드 리뷰를 하지 않아 전체 페이지의 ui를 다듬을 때, 다른 팀원이 짠 코드를 파악하는 데에 시간이 오래 걸렸고 결국 모든 문제를 해결할 수 없었다.
+컴포넌트 이름으로 컴포넌트의 역할을 파악하기 힘들었다.
+
+
+Try
+
+매일매일 진행상황을 공유하고, 한 기능이나 컴포넌트 등이 끝날 때에는 코드 리뷰를 자세히 해서 모든 팀원들이 코드를 이해하게 한다.
+```

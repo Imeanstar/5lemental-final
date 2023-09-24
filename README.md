@@ -123,8 +123,8 @@ https://make-my-fridge-be-empty.netlify.app/
 
 ---
 ## 🚙✨사용 기술 스택
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
-<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white"> <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"><br>
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white"> <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"><br>
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white"> <img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/Zustand-443D36?style=for-the-badge&logo=AmazoneRoute53&logoColor=white">
 
 
@@ -188,9 +188,9 @@ https://make-my-fridge-be-empty.netlify.app/
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/fef1d659-83c1-4d9f-a796-dcad061681c5"> | **1. UI** <br/> [ ] FIGMA 시안 구현 <br/> [ ] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [ ] 검색창에 값 입력과 동시에 /search 페이지로 이동 <br/> [ ] 내 재료 - 해당 계정에서 추가되었던 재료 목록 pocketbase 와 통신하여 렌더링 <br/> [ ] 오늘 뭐 먹지? - 현재 서비스 내에 있는 전체 메뉴 목록 랜더링 (랜더링 시, 요리 사진, 요리명, 주요 재료 랜더링 필요) <br/> [ ] 오늘 뭐 먹지? - 좌우 스크롤로 이동하며, 최대 5개까지의 메뉴 렌더링 <br/> [ ] 전체보기 - /menulist 페이지로 이동 <br/> [ ] 내 냉장고 속 재료로 요리하기 버튼 - /fridge 페이지로 이동 <br/> [ ] 메뉴 카드 선택 시, 해당 /recipedetail 페이지로 이동 <br/><br/> **3. 사용 컴포넌트** <br/> < Heading /> <br/> < SearchInput /> <br/> < IngredientButtonSaero /> <br/> < MenuItem /> <br/> < Button /> <br/> < NavBar /> |
 
 ### 실제 구현 화면
-| 스마트폰 화면 | 태블릿 화면 |
-|:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b5900719-f3fe-4ae9-b481-88762431ecd6" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/13944121-84f9-4e5f-826b-9d855932a739" width="210" height="295"/>|
+| 스마트폰 화면 | 태블릿 화면 | 네트워크 문제 발생 시 |
+|:-------------|:-----------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b5900719-f3fe-4ae9-b481-88762431ecd6" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/13944121-84f9-4e5f-826b-9d855932a739" width="210" height="295"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/137a7f33-cc5b-4250-b5a0-791488ec7f9e" width="160" height="284"/>|
 
 
 
@@ -201,9 +201,9 @@ https://make-my-fridge-be-empty.netlify.app/
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/aa61db10-dcf7-4ae0-b263-9cecdfa1bbb1"> | **1. UI** <br/> [ ] FIGMA 시안 구현 <br/> [ ] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [ ] 검색 결과 렌더링 <br/> [ ] 검색 결과 렌더링 시, 메뉴 이름, 메뉴 설명, 좋아요 갯수 함께 렌더링 됨. <br/> [ ] 메뉴 카드 선택 시, 해당 /recipedetail 페이지로 이동 <br/><br/> **3. 사용 컴포넌트** <br/> < SearchInput /> <br/> < SearchRecord /> <br/> < MenuImage /> <br/> < MenuBox /> <br/> < LikeButton /> <br/> < NavBar /> |
 
 ### 실제 구현 화면
-| 스마트폰 화면 | 태블릿 화면 |
-|:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/96577eab-15be-4c2a-911f-dc589c38482c" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/1adce1eb-9414-4c59-bdf7-17062deaff85" width="210" height="295"/>|
+| 스마트폰 화면 | 태블릿 화면 | 검색결과 없을 경우 |
+|:-------------|:-----------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/96577eab-15be-4c2a-911f-dc589c38482c" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/1adce1eb-9414-4c59-bdf7-17062deaff85" width="210" height="295"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5fce8da8-0cdc-4ad5-8919-c8c26d1e92e1" width="160" height="284"/>|
 
 
 ### 6. MenuList
@@ -249,7 +249,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/8d05e3ac-5c38-4217-9fa7-8e9c83ea5430" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/f5373b88-fa4e-4e8f-b1ea-28cf1eff581e" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/1df8099c-c235-4c66-a902-4110ee0f502a" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b3063472-66fb-4a44-ba89-e3633e38b186" width="210" height="295"/>|
 
 ### 10. FridgeMenu
 
@@ -296,17 +296,39 @@ https://make-my-fridge-be-empty.netlify.app/
 
 ### 1. Start
 <img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5bea5e27-bf68-4852-b0b7-f698747c77f8" width="300" height="90"/>
+
 ### 2. SignIn
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/db3db110-1f0e-462f-b809-e816c0279d5d" width="300" height="90"/>
+
 ### 3. SignUp
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/614961f2-286d-49d7-82f2-706ce495eb52" width="300" height="90"/>
+
 ### 4. Home
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/a7780227-10f4-4708-a8df-47c345ad6ef5" width="300" height="90"/>
+
 ### 5. Search
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/3700f707-2510-429d-9cac-59e2544016bf" width="300" height="90"/>
+
 ### 6. MenuList
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/27609007-59cf-4bcb-a5a8-fe1176691608" width="300" height="90"/>
+
 ### 7. MyProfile
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/9e87faf0-3af9-4524-b5c2-44fbf18ec0c5" width="300" height="90"/>
+
 ### 8. MyFridge
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5689eefe-7c93-4bc6-960f-43554c39d3bb" width="300" height="90"/>
+
 ### 9. AddIngredients
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5689eefe-7c93-4bc6-960f-43554c39d3bb" width="300" height="90"/>
+
 ### 10. FridgeMenu
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5689eefe-7c93-4bc6-960f-43554c39d3bb" width="300" height="90"/>
+
 ### 11. RecipeDetail
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5689eefe-7c93-4bc6-960f-43554c39d3bb" width="300" height="90"/>
+
 ### 12. RecipeLiked
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5689eefe-7c93-4bc6-960f-43554c39d3bb" width="300" height="90"/>
 
 #### 김다연
 

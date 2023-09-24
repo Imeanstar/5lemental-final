@@ -28,58 +28,88 @@ https://make-my-fridge-be-empty.netlify.app/
 
 ## 👩‍💻🧑‍💻 Project 팀원별 역할
 # 김민성
+
 - 조장
+
 - IngredientButtonGaro컴포넌트
 <img width="100" alt="IngredientButtonGaro 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/3776f2f1-af62-4ff8-9df6-d1d0d71f6231">
+
 - MenuItem 컴포넌트
 <img width="100" alt="MenuItem 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/2f8b1d9b-8ad7-4073-83f7-aae97a33b090">
+
 - MyFridge 페이지
+
 - AddIngredients 페이지
+
 - FridgeMenu 페이지
 ---
 # 김다연
+
 - 스크럼마스터
+
 - InputBox 컴포넌트
 <img width="150" alt="InputBox 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/2feea49e-18c0-46e8-8f0b-a23a13d661e8">
+
 - Heading 컴포넌트
 <img width="100" alt="Heading 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/916c0034-a902-4726-9b96-d70475b70370">
+
 - CategoryButton 컴포넌트
 <img width="100" alt="CategoryButton 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/d6ab3230-78c9-48a8-8b80-f777f365c5e4">
+
 - Button 컴포넌트
 <img width="100" alt="Button 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/6f9e7518-100c-4d2e-a2eb-6c14c9b456f7">
+
 - LikeButton 컴포넌트
 <img width="100" alt="LikeButton 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/019661fa-6a06-4edb-a30b-2e23925ecc28">
+
 - MenuItem 컴포넌트
 <img width="100" alt="MenuItem 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/2f8b1d9b-8ad7-4073-83f7-aae97a33b090">
+
 - Start 페이지
+
 - SignIn 페이지
+
 - SignUp 페이지
+
 - Search 페이지
+
 - MenuList 페이지
+
 - RecipeLiked 페이지
+
 - MyProfile 페이지
 
 ---
 # 김성재
+
 - MenuBox 컴포넌트
 <img width="200" alt="MenuBox 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/d13b61b6-f19d-4f13-a2cf-648da4f9d3d9">
+
 - RecipeLiked 페이지
 
 ---
 # 김희소
+
 - IngredientButtonSero 컴포넌트
 <img width="100" alt="IngredientButtonSero 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/8639fab1-4c5b-4745-af36-5fa635c7d178">
+
 - Title 컴포넌트
 <img width="100" alt="Title 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/4ec52022-0f2e-4e77-b59f-fb562e373bba">
+
 - SearchInput 컴포넌트
 <img width="200" alt="SearchInput 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/d8887e45-0b77-439e-9b6b-be43d3c6c7b4">
+
 - IngredientItem 컴포넌트
 <img width="200" alt="IngredientItem 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/c300ccc6-0d5f-4136-ad83-0fefc9ea5548">
+
 - NavBar 컴포넌트
 <img width="200" alt="NavBar 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/b90f6703-fb6b-4af6-86d8-f3b98d2b7a48">
+
 - MenuItem 컴포넌트
 <img width="100" alt="MenuItem 컴포넌트" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/2f8b1d9b-8ad7-4073-83f7-aae97a33b090">
+
 - Home 페이지
+
 - RecipeDetail 페이지
 
 --------
@@ -93,20 +123,10 @@ https://make-my-fridge-be-empty.netlify.app/
 
 ---
 ## 🚙✨사용 기술 스택
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
-<img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
-<br>
-<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
-<img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white">
-<img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white">
-<br>
-<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
-<img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white">
-<img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
-<img src="https://img.shields.io/badge/Zustand-443D36?style=for-the-badge&logo=AmazoneRoute53&logoColor=white">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white"> <img src="https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white">
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white"> <img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white"> <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/Zustand-443D36?style=for-the-badge&logo=AmazoneRoute53&logoColor=white">
+
 
 ---
 
@@ -195,7 +215,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/ed1596e4-977c-4dc8-bb9d-66030544a47e" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/745e12a9-eac6-405c-a4df-81d02e4f4838" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/2f32e88a-f12e-4298-8ea6-6d220573145b" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/95a6e0f7-6faa-44ce-8607-f5fdd7a7825c" width="210" height="295"/>|
 
 
 ### 7. MyProfile
@@ -218,7 +238,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/b721e5cc-1659-44db-9adc-38334210f55f" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/e5c78077-b2f8-45d4-9c8e-cac80284e93c" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/4ec4037f-d5ed-463d-a1d0-92d8ea956f03" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/e5c78077-b2f8-45d4-9c8e-cac80284e93c" width="210" height="295"/>|
 
 ### 9. AddIngredients
 
@@ -229,7 +249,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/d574afc1-1310-44b9-a5e8-3d2c42cda6ba" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/423d1a14-b1e3-46e7-9d06-056c78258246" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/8d05e3ac-5c38-4217-9fa7-8e9c83ea5430" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/f5373b88-fa4e-4e8f-b1ea-28cf1eff581e" width="210" height="295"/>|
 
 ### 10. FridgeMenu
 
@@ -273,6 +293,20 @@ https://make-my-fridge-be-empty.netlify.app/
 ---
 
 ## 🎈 한줄소감
+
+### 1. Start
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5bea5e27-bf68-4852-b0b7-f698747c77f8" width="300" height="90"/>
+### 2. SignIn
+### 3. SignUp
+### 4. Home
+### 5. Search
+### 6. MenuList
+### 7. MyProfile
+### 8. MyFridge
+### 9. AddIngredients
+### 10. FridgeMenu
+### 11. RecipeDetail
+### 12. RecipeLiked
 
 #### 김다연
 

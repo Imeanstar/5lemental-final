@@ -34,14 +34,18 @@ function Search() {
   return (
     <div className="px-5 w-full max-w-[820px] m-auto">
       <SearchInput searchType="menu"></SearchInput>
+      <div className='mt-4'></div>
       {searchList.length > 0 ? (
         searchList.map((searchItem) =>
           cooksList
             .filter((item) => item.name === searchItem)
             .map((item, index) => (
-              <MenuBox key={index} item={item} name={item.name} />
+              <div key={index} className='mb-3'>
+              <MenuBox item={item} name={item.name} />
+              </div>
             ))
         )
+      
       ) : (
         <div className="container flex justify-center w-full mt-5">
           <div className="text-center -bg--fridge-bg-gray rounded-3xl h-8 leading-8 text-sm px-3">

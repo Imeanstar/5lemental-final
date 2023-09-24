@@ -10,7 +10,7 @@ function CategoryButton() {
 
   return (
     <>
-      <div className="wrapper max-w-[820px] m-auto flex flex-col justify-start items-center mt-[10px]">
+      <div className="wrapper m-auto flex flex-col justify-start items-center mt-[20px]">
         <div className="container flex justify-center items-center gap-2">
           <button
             onClick={() => {

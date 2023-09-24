@@ -3,16 +3,11 @@ import IngredientButtonGaro from '../components/IngredientButtonGaro';
 
 function MyFridge() {
   return (
-    <div className="max-w-[820px] m-auto min-w-[320px]">
-      <div className='h-5'></div>
-      <div className="h-[430px] overflow-y-scroll max-w-[820px] m-auto min-w-[320px]">
+    <div className='px-5 w-full max-w-[820px] m-auto'>
         <IngredientButtonGaro 
-        ingredientName={'1'}
-        print={'Fridge'}
-      ></IngredientButtonGaro>
-      </div>
-
-      {/* <NavBar></NavBar> */}
+          ingredientName={'1'}
+          print={'Fridge'}
+        />
     </div>
   );
 }

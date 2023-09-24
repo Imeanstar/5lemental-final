@@ -74,7 +74,7 @@ function MyProfile() {
 
   return (
     <>
-      <div className="wrapper w-screen px-[26px] pt-[25px] -bg--fridge-white flex flex-nowrap flex-col">
+      <div className="wrapper px-[26px] pt-[25px] -bg--fridge-white flex flex-nowrap flex-col">
         <ToastContainer
           position="top-center"
           autoClose={1000}

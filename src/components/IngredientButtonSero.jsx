@@ -67,7 +67,7 @@ function IngredientButtonSero () {
     >
       {myIngredient === undefined ? (
         <Link to='/addingredients' className='flex justify-center'>
-          <div className='text-center -bg--fridge-bg-gray rounded-3xl w-3/5 h-8 leading-8 text-sm'>
+          <div className='text-center -bg--fridge-bg-gray rounded-3xl text-base p-5'>
             클릭하여 재료를 추가해보세요!🧐
           </div>
         </Link>

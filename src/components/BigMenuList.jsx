@@ -48,6 +48,7 @@ function BigMenuList() {
     }
     fetchList();
   }, []);
+  console.log(likedMenuList);
   return (
       menu.map((item) => {
         temp = 0;
@@ -57,7 +58,7 @@ function BigMenuList() {
               ingreList.includes(ingreKey) ? temp = temp + 1 : temp = temp + 0;
             })
           }
-          console.log('item : ', item);
+          // console.log('item : ', item);
           // console.log('temp : ', temp);
         if(temp > 0 ){
           return(

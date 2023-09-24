@@ -249,7 +249,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/8d05e3ac-5c38-4217-9fa7-8e9c83ea5430" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/f5373b88-fa4e-4e8f-b1ea-28cf1eff581e" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/1df8099c-c235-4c66-a902-4110ee0f502a" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b3063472-66fb-4a44-ba89-e3633e38b186" width="210" height="295"/>|
 
 ### 10. FridgeMenu
 

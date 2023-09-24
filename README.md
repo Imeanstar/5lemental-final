@@ -10,7 +10,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ---
 
 ## 📸 Project 미리보기
-<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/0da2e5d0-1d53-48cb-b5eb-bbaac2520a32" width="160" height="284"/>
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/e1b610c7-cfcd-4ac8-9e70-a3df0a1ebf73" width="160" height="284"/>
 
 ---
 
@@ -168,7 +168,7 @@ https://make-my-fridge-be-empty.netlify.app/
 ### 실제 구현 화면
 | 스마트폰 화면 | 태블릿 화면 |
 |:-------------|:-----------|
-|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/02d5cd42-0bd8-4ba3-9fc5-d5c5dd829516" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/81348938/ed0a3a68-3eaa-4f99-b343-8213479e0f9b" width="210" height="295"/>|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b5900719-f3fe-4ae9-b481-88762431ecd6" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/13944121-84f9-4e5f-826b-9d855932a739" width="210" height="295"/>|
 
 
 
@@ -177,6 +177,12 @@ https://make-my-fridge-be-empty.netlify.app/
 | FIGMA 시안                                                                                                                                   | 스타일링 및 기능 구현                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img width="250" alt="Start" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/aa61db10-dcf7-4ae0-b263-9cecdfa1bbb1"> | **1. UI** <br/> [ ] FIGMA 시안 구현 <br/> [ ] 반응형 UI (max-width: 820px 까지 확대, 이후 여백 적용) <br/><br/> **2. 기능 구현** <br/> [ ] 검색 결과 렌더링 <br/> [ ] 검색 결과 렌더링 시, 메뉴 이름, 메뉴 설명, 좋아요 갯수 함께 렌더링 됨. <br/> [ ] 메뉴 카드 선택 시, 해당 /recipedetail 페이지로 이동 <br/><br/> **3. 사용 컴포넌트** <br/> < SearchInput /> <br/> < SearchRecord /> <br/> < MenuImage /> <br/> < MenuBox /> <br/> < LikeButton /> <br/> < NavBar /> |
+
+### 실제 구현 화면
+| 스마트폰 화면 | 태블릿 화면 |
+|:-------------|:-----------|
+|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/96577eab-15be-4c2a-911f-dc589c38482c" width="160" height="284"/>|<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/1adce1eb-9414-4c59-bdf7-17062deaff85" width="210" height="295"/>|
+
 
 ### 6. MenuList
 

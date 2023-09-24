@@ -13,18 +13,21 @@ const initialAuthState = {
 const authStore = (set) => ({
   ...initialAuthState,
 
-  initialize: () => {
+  /* initialize: () => {
     // 화면 새로고침 시 로그인 상태 초기화
     const token = localStorage.getItem('token');
     if (token) {
-      pb.setToken(token); // Pocketbase에 토큰 설정
-      set({ isLoggedIn: true, token });
+      set((state) => ({
+        ...state,
+        isValid: true,
+        token,
+      }));
     }
-  },
+  }, */
 
   /* Pb SDK를 사용한 회원가입 */
   signUp: async (newUser) => {
-    const authData = await pb.collection(USER_COLLECTION).create(newUser);
+  /*   const authData = await pb.collection(USER_COLLECTION).create(newUser);
     const { token } = pb.authStore;
     
     // 토큰을 로컬 스토리지에 저장
@@ -36,7 +39,8 @@ const authStore = (set) => ({
       token,
     }));
 
-    return authData;
+    return authData; */
+    return await pb.collection(USER_COLLECTION).create(newUser);
   },
 
   /* Pb SDK를 사용한 로그인 */
@@ -44,14 +48,16 @@ const authStore = (set) => ({
     const authData = await pb
       .collection(USER_COLLECTION)
       .authWithPassword(id, password);
-    const { token } = pb.authStore;
+    const { isValid, model,token } = pb.authStore;
 
     // 토큰을 로컬 스토리지에 저장
-    localStorage.setItem('token', token);
+    // localStorage.setItem('token', token);
 
     set((state) => ({
       ...state,
       id,
+      isValid,
+      user: model.id,
       isLoggedIn: true,
       token,
     }));
@@ -64,7 +70,7 @@ const authStore = (set) => ({
     const response = await pb.authStore.clear();
 
     // 로컬 스토리지에서 토큰 제거
-    localStorage.removeItem('token');
+    // localStorage.removeItem('token');
 
     set((state) => ({
       ...state,

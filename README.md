@@ -379,7 +379,7 @@ checkNumber()
 <a name="성능검사결과"></a>
 <details>
 <summary style="font-size:26px;font-weight:bold;"> 📊 Project 사이트 성능 검사 결과 </summary>
-
+  
 
 ### 1. Start
 <img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5bea5e27-bf68-4852-b0b7-f698747c77f8" width="300" height="90"/>

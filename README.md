@@ -25,21 +25,21 @@ https://make-my-fridge-be-empty.netlify.app/
 
 ---
 <a name="팀"></a>
-## 👩‍💻🧑‍💻 Project 팀
+# 👩‍💻🧑‍💻 Project 팀
 
 ### 팀명: 오리멘탈 🐤
 
 **서로 다른 오리가 모여 화합을 이루는 오리멘탈입니다!**
 
 | 김민성 | 김다연 | 김성재 | 김희소 |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :------: | :-------: | :------: | :------: |
 | <img width="200" alt="스크린샷 2023-09-03 오전 12 15 03" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/029feac2-0451-40ed-9a6e-b38facb1fe93"> | <img width="200" alt="스크린샷 2023-09-03 오후 5 39 01" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/b6ea7faf-e3f6-46dc-ba0e-3ab9372dc39a"> | <img width="200" alt="스크린샷 2023-09-03 오전 12 15 16" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/9ed634bd-801a-4cd0-93db-43dc6d6c2821"> | <img width="200" alt="스크린샷 2023-09-03 오전 12 17 13" src="https://github.com/FRONTENDSCHOOL6/5lemental-final/assets/134567470/f67a9985-7656-4653-b3dc-006a0e14e8c8"> |
 |  그냥왕 킹민성  |  긍정왕 김다연   |    운동왕 김성재   |  여행왕 김희소  |
 
 
-## 👩‍💻🧑‍💻 Project 팀원별 역할
+# 👩‍💻🧑‍💻 Project 팀원별 역할
 <a name="Project 미리보기"></a>
-# 김민성
+## 김민성
 
 | 조장 | IngredientButtonGaro 컴포넌트 | MenuItem 컴포넌트 |
 | :----: | :----: | :----: |
@@ -50,7 +50,7 @@ https://make-my-fridge-be-empty.netlify.app/
 | <img width="100" alt="스크린샷 2023-09-03 오후 5 39 01" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/d8e826db-c92c-42e3-9935-69ebac1b3924">  | <img width="150" alt="AddIngredients 페이지" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b471c73e-080e-4845-ba10-ea0da95afb17"> | <img width="150" alt="FridgeMenu 페이지" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/13b20128-1809-4fdc-9399-f8635be7765f"> |
 
 ---
-# 김다연
+## 김다연
 
 |  스크럼마스터 | InputBox 컴포넌트 | Heading 컴포넌트 |
 | :----: | :----: | :----: |
@@ -73,7 +73,7 @@ https://make-my-fridge-be-empty.netlify.app/
 | <img width="150" alt="RecipeLiked 페이지" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/23be5657-ce6e-445e-8e7d-114b47a8484f"> | <img width="150" alt="MyProfile 페이지" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/6752f766-2611-4b1b-9ed9-e889f08363a9"> | <img width="150" alt="RecipeDetail 페이지" src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/00da3772-0873-4977-a4f2-06237e242228"> |
 
 ---
-# 김성재
+## 김성재
 
 | MenuBox 컴포넌트 | RecipeLiked 페이지 |
 | :----: | :----: |
@@ -82,7 +82,7 @@ https://make-my-fridge-be-empty.netlify.app/
 
 
 ---
-# 김희소
+## 김희소
 
 | IngredientButtonSero 컴포넌트 | Title 컴포넌트 | SearchInput 컴포넌트 |
 | :----: | :----: | :----: |
@@ -123,7 +123,7 @@ TOOLS<br>
 SETTING<br>
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white"> <img src="https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white"> <br><br>
 DATABASE<br>
-<img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white"><br> 
+<img src="https://img.shields.io/badge/pocketbase-B8DBE4?style=for-the-badge&logo=pocketbase&logoColor=white"><br><br>
 Disign & Communication<br>
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <br><br>
  

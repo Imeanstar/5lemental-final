@@ -298,13 +298,13 @@ https://make-my-fridge-be-empty.netlify.app/
 <img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/5bea5e27-bf68-4852-b0b7-f698747c77f8" width="300" height="90"/>
 
 ### 2. SignIn
-<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/db3db110-1f0e-462f-b809-e816c0279d5d" width="300" height="90"/>
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/cca7f41c-e1e9-423e-be50-5686cc118af0" width="300" height="90"/>
 
 ### 3. SignUp
-<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/614961f2-286d-49d7-82f2-706ce495eb52" width="300" height="90"/>
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/2de8e685-b58b-4b0e-bc53-41dd658f3ac8" width="300" height="90"/>
 
 ### 4. Home
-<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/a7780227-10f4-4708-a8df-47c345ad6ef5" width="300" height="90"/>
+<img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/b0e28872-65e7-4f50-a8fa-34312f781e5b" width="300" height="90"/>
 
 ### 5. Search
 <img src="https://github.com/FRONTENDSCHOOL6/make-my-fridge-empty/assets/81348938/3700f707-2510-429d-9cac-59e2544016bf" width="300" height="90"/>

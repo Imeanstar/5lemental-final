@@ -20,7 +20,7 @@ function MenuBox({ item, name }) {
             <img
               src={getPbImageURL(item, 'photo')}
               alt=""
-              className="w-[70px] h-[70px] rounded-[10px]"
+              className="w-[70px] h-[70px] object-cover rounded-[10px]"
             />
           </figure>
         </div>

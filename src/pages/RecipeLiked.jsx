@@ -30,23 +30,30 @@ function RecipeLiked() {
   }, []);
 
   if (status === 'loading') {
-    return <div>Loading...</div>;
+    return <div className=' flex justify-center my-20'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              로딩 중... 🏃🏻‍♀🏃🏻
+            </div>
+          </div>;
   }
 
   if (status === 'error') {
-    return <div>Error loading data</div>;
+    return <div className=' flex justify-center my-20'>
+            <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              🧑🏻‍🔧서버 점검 중 입니다.👨🏻‍🔧<br/>
+              불편을 드려 죄송합니다😞
+            </div>
+          </div>;
   }
 
   return (
     <>
-      <div className="wrapper w-screen h-full px-[16px] pt-[20px] -bg--fridge-white flex flex-wrap flex-col justify-center">
-        <div className="container w-full max-w-[500px] mx-auto mb-[70px] flex flex-col justify-center items-center">
-          <ul className="w-full">
-            {data.map((item) => (
-              <MenuBox key={item.id} item={item} name={item.name} />
-            ))}
-          </ul>
-        </div>
+      <div className="wrapper px-5 w-full max-w-[820px] m-auto h-full pt-[20px] -bg--fridge-white">
+        <ul className="w-full flex flex-col gap-3 justify-center">
+          {data.map((item) => (
+            <MenuBox key={item.id} item={item} name={item.name} />
+          ))}
+        </ul>
       </div>
     </>
   );

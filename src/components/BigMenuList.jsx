@@ -48,6 +48,7 @@ function BigMenuList() {
     }
     fetchList();
   }, []);
+  console.log(likedMenuList);
   return (
       menu.map((item) => {
         temp = 0;
@@ -57,7 +58,7 @@ function BigMenuList() {
               ingreList.includes(ingreKey) ? temp = temp + 1 : temp = temp + 0;
             })
           }
-          console.log('item : ', item);
+          // console.log('item : ', item);
           // console.log('temp : ', temp);
         if(temp > 0 ){
           return(
@@ -65,7 +66,7 @@ function BigMenuList() {
             key={item.id}
             //! 여기!!! key={item}으로 하니까 이상하게 출력되는 이슈가 있었는데, item.id로 하니까 잘 출력이 되어요....
             //! 왜...... 결국 다른 item이면 다 item 다르고 같은 item이면 item.id도 같을텐데...
-            className="w-[129px] h-[157px] my-[10px] mx-2 relative"
+            className="w-[129px] h-[157px] relative"
           >
             <Link
               to="/recipedetail"

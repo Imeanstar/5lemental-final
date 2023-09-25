@@ -67,11 +67,11 @@ export default function IngredientItemGaro({ item, user, stat, print }) {
           }}
         >
           <div className='flex flex-row items-center justify-center'>
-            <figure>
+            <figure className='w-12 h-12'>
               <img
                 src={getPbImageURL(item, 'photo')}
-                className="w-12 h-12 ml-2"
-                alt=""
+                className="w-auto h-auto ml-2"
+                alt={item.name}
               />
               {/* <span>{item.name}</span> */}
             </figure>
@@ -90,11 +90,11 @@ export default function IngredientItemGaro({ item, user, stat, print }) {
           }}
         >
           <div className='flex flex-row items-center justify-between'>
-            <figure>
+            <figure className='w-12 h-12'>
               <img
                 src={getPbImageURL(item, 'photo')}
-                className="w-12 h-12 ml-2"
-                alt=""
+                className="w-auto ml-2"
+                alt={item.name}
               />
               {/* <span>{item.name}</span> */}
             </figure>

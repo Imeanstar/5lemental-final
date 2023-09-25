@@ -54,7 +54,11 @@ function IngredientButtonGaro({ingredientName, print}) {
   }, [setCart]);
 
   if (status === 'loading') {
-    return <div>loading</div>;
+    return  <div className=' flex justify-center my-20'>
+              <div className='text-center -bg--fridge-bg-gray rounded-3xl w-2/5 h-9 leading-9 text-base font-nanum'>
+              로딩 중... 🏃🏻‍♀🏃🏻
+              </div>
+            </div>;
   }
 
 
@@ -62,7 +66,7 @@ if(print == 'Fridge'){
     console.log(111);
     return (
       <div>
-        <ul className="flex flex-wrap justify-around">
+        <ul className="flex flex-wrap justify-center gap-4 mt-6">
           {cart?.map((ingredient) => {
             if((ingredient.id != 'undefined') && (user1.ingredients_keys != 'undefined') && (ingredient.id != null) && (user1.ingredients_keys != null)){
               let ingreid = ingredient.id;

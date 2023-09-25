@@ -69,10 +69,10 @@ function MenuList() {
   }, []);
 
   return (
-    <>
+    <div className='px-5 w-full max-w-[820px] m-auto'>
       <CategoryButton />
-      <div className="wrapper w-screen h-full px-[16px] pt-[20px] -bg--fridge-white flex ">
-        <div className="container max-w-[820px] mx-auto mb-[70px] flex flex-wrap flex-row gap-[20px] justify-center items-start">
+      <div className="wrapper h-full pt-[20px] -bg--fridge-white flex ">
+        <div className="container flex flex-wrap flex-row gap-[20px] justify-center items-start">
           {menuNameList.map((name, index) => (
             <div
               key={index}
@@ -101,7 +101,7 @@ function MenuList() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

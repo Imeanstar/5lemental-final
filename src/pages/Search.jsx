@@ -6,8 +6,13 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 function Search() {
-  const searchList = useSearchLogStore((state) => state.searchList);
+  const { searchList, isNavigated, setIsNavigated } = useSearchLogStore();
   const [cooksList, setCooksList] = useState([]);
+
+  if (isNavigated) {
+    setIsNavigated(false);
+    console.log(isNavigated);
+  }
 
   useEffect(
     () =>
@@ -23,20 +28,24 @@ function Search() {
           console.log(error);
         }
       },
-    [searchList]
+    [searchList, isNavigated]
   );
 
   return (
-    <div className="px-5 w-full max-w-[820px] m-auto mt-9">
+    <div className="px-5 w-full max-w-[820px] m-auto">
       <SearchInput searchType="menu"></SearchInput>
+      <div className='mt-4'></div>
       {searchList.length > 0 ? (
         searchList.map((searchItem) =>
           cooksList
             .filter((item) => item.name === searchItem)
             .map((item, index) => (
-              <MenuBox key={index} item={item} name={item.name} />
+              <div key={index} className='mb-3'>
+              <MenuBox item={item} name={item.name} />
+              </div>
             ))
         )
+      
       ) : (
         <div className="container flex justify-center w-full mt-5">
           <div className="text-center -bg--fridge-bg-gray rounded-3xl h-8 leading-8 text-sm px-3">

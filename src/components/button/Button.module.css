@@ -1,0 +1,7 @@
+button.large {
+  @apply -bg--fridge-primary -text--fridge-white font-dohyeon w-full h-[50px] rounded-[15px] text-[17px] py-[14px] mx-auto;
+}
+
+button.small {
+  @apply -bg--fridge-primary -text--fridge-white font-dohyeon w-[204px] h-[40px] rounded-[15px] text-[18px] mt-[13px];
+}

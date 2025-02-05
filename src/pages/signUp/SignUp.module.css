@@ -1,0 +1,19 @@
+.agreeBox {
+  @apply opacity-0 w-1 h-1;
+}
+
+.notAgreed {
+  @apply w-full flex flex-row items-center justify-between after:block after:w-[24px] after:h-[24px] after:bg-[url('/src/assets/icons/checkbox-circle-light.svg')] after:bg-cover;
+}
+
+.agreed {
+  @apply w-full flex flex-row items-center justify-between after:block after:w-[24px] after:h-[24px] after:bg-[url('/src/assets/icons/checkbox-circle-dark.svg')] after:bg-cover;
+}
+
+.alert {
+  @apply ml-1 mb-[2px] h-3 flex items-center -text--fridge-red font-nanum text-[8px] before:block before:w-[9px] before:h-[9px] before:bg-cover before:bg-[url('/src/assets/icons/alert-circle-red.svg')] before:mr-1;
+}
+
+.normal {
+  @apply h-[12px] ml-3 mb-[2px] flex items-center -text--fridge-nav-gray font-nanum text-[8px];
+}

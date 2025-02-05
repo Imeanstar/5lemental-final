@@ -1,0 +1,20 @@
+/* 기능구현 안됨 ㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜ */
+/* LikeButton.css */
+.like-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.like-button button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.like-button.liked {
+  transform: scale(1.2); /* 좋아요 표시를 눌렀을 때 애니메이션 효과 */
+}

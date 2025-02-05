@@ -1,0 +1,7 @@
+button.selected {
+  @apply w-[55px] h-[31px] rounded-[7px] font-dohyeon text-[15px] text-[#393939] -bg--fridge-skyblue;
+}
+
+button.notSelected {
+  @apply w-[55px] h-[31px] rounded-[7px] font-dohyeon text-[15px] text-[#393939] bg-[#F5F5F5];
+}

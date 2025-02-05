@@ -1,0 +1,103 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "emmet.variables": {
+    "lang": "ko"
+  },
+  "emmet.syntaxProfiles": {
+    "attr_case": "lower",
+    "attr_quotes": "double",
+    "html": "xhtml",
+    "inline_break": 3,
+    "self_closing_tag": "xhtml",
+    "tag_case": "lower"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "postcss": "css"
+  },
+  "figma.assetExportDirectory": "src/assets",
+  "prettier.printWidth": 160,
+  "prettier.trailingComma": "none",
+  "prettier.quoteProps": "preserve",
+  "prettier.singleQuote": true,
+  "gitmoji.onlyUseCustomEmoji": true,
+  "gitmoji.addCustomEmoji": [
+    {
+      "emoji": "✨",
+      "code": ":sparkles:",
+      "description": "[new features] 기능 및 코드 추가"
+    },
+    {
+      "emoji": "🔥",
+      "code": ":fire:",
+      "description": "[remove] 기능 및 코드 제거"
+    },
+    {
+      "emoji": "💎",
+      "code": ":diamond:",
+      "description": "[modify] 기능 및 코드 수정"
+    },
+    {
+      "emoji": "🎨",
+      "code": ":art:",
+      "description": "[styling] 코드 스타일링"
+    },
+    {
+      "emoji": "➕",
+      "code": ":heavy_plus_sign:",
+      "description": "[add] 파일 추가"
+    },
+    {
+      "emoji": "➖",
+      "code": ":heavy_minus_sign:",
+      "description": "[remove] 파일 제거"
+    },
+    {
+      "emoji": "📦",
+      "code": ":box:",
+      "description": "[move] 파일 이동"
+    },
+    {
+      "emoji": "🏗️",
+      "code": ":card_file_box:",
+      "description": "[structure] 프로젝트 구조 변경"
+    },
+    {
+      "emoji": "🐛",
+      "code": ":bug:",
+      "description": "[fix] 버그 수정"
+    },
+    {
+      "emoji": "🚑",
+      "code": ":ambulance:",
+      "description": "[hotfix] 치명적인 버그 수정"
+    },
+    {
+      "emoji": "♻️",
+      "code": ":recycle:",
+      "description": "[refactor] 코드 리팩토링"
+    },
+    {
+      "emoji": "📝",
+      "code": ":memo:",
+      "description": "[doc] 문서 작성 및 편집"
+    },
+    {
+      "emoji": "🎉",
+      "code": ":tada:",
+      "description": "[init] 초기 커밋"
+    },
+    {
+      "emoji": "🚀",
+      "code": ":rocket:",
+      "description": "[deploy] 프로젝트 배포"
+    }
+  ]
+}
